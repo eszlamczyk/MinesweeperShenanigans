@@ -39,7 +39,7 @@ public class SaperMap {
         int correctFlags = 0;
         int totalFlags = 0;
         for (Position position : pressedPosition.getNeighbours(this.size)){
-            if(State.flag.equals(visibleMap.get(position)){
+            if(State.flag.equals(visibleMap.get(position))){
                 totalFlags += 1;
                 if(State.mine.equals(mines.get(position))){
                     correctFlags += 1;
